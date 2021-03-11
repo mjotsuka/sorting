@@ -133,7 +133,7 @@ def merge_sorted(xs, cmp=cmp_standard):
     if len(xs) <= 1:
         return xs
     else:
-        mid = len(xs)//2
+        mid = len(xs) // 2
         left = xs[:mid]
         right = xs[mid:]
         return _merged(merge_sorted(left, cmp),
